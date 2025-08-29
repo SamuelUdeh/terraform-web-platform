@@ -87,7 +87,10 @@ terraform plan
 terraform apply 
 ```
 
-Outputs will include the ALB DNS (visit in browser) and RDS endpoint.
+![Terraform Project 2](https://github.com/user-attachments/assets/a0ec1e4b-49ae-4b0c-b736-a1b3a9b15024)
+
+
+Outputs will include the -ALB DNS- (accessible via browser) and the -RDS- endpoint.
 
 **Verification & Tests**
 
@@ -117,5 +120,6 @@ terraform destroy -var-file=terraform.tfvars
 👤 Author
 
 Samuel Udeh — Cloud/DevOps Engineer
+
 
 
