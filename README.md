@@ -2,7 +2,7 @@
 
 Production-ready, auto-scaling web platform on AWS using Terraform modules and separate environments (dev, prod). Includes ALB, ASG (EC2 with Nginx via user_data), RDS (MySQL), and CloudWatch monitoring.
 
-🔧 **Features**
+ **Features**
 
 - Modular Terraform (networking, compute, database, monitoring)
 
@@ -87,5 +87,35 @@ terraform plan
 terraform apply 
 ```
 
+Outputs will include the ALB DNS (visit in browser) and RDS endpoint.
+
+**Verification & Tests**
+
+- **ALB/EC2:** curl http://<alb_dns> → should return the Nginx page with env banner.
+
+- **Health checks:** Target group → targets = healthy.
+
+- **Scaling:** Generate CPU load on an instance (e.g., stress-ng) or adjust policy thresholds; watch ASG scale events.
+
+- **RDS:** Connect with a MySQL client to the RDS endpoint using credentials from terraform.tfvars.
+
+- **Monitoring:** CloudWatch → check EC2/ALB/RDS metrics; confirm alarms trigger and recover.
+
+**Security**
+
+- Keep secrets only in terraform.tfvars (git-ignored).
+
+- App SG allows inbound only from ALB SG.
+
+- RDS not publicly accessible; only from app SG.
+
+
+# Teardown
+cd environments/dev
+terraform destroy -var-file=terraform.tfvars
+
+👤 Author
+
+Samuel Udeh — Cloud/DevOps Engineer
 
 
