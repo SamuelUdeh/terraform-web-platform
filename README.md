@@ -57,15 +57,16 @@ terraform-web-platform/
 
 **Module Roles**
 
-- Networking: VPC, subnets (public/private AZ1/AZ2), IGW, NAT, routes, SGs
+- **Networking:** VPC, subnets (public/private AZ1/AZ2), IGW, NAT, routes, SGs
 
-- Compute: ALB, target group, listener, launch template (Nginx user_data), ASG, scaling policies
+- **Compute:** ALB, target group, listener, launch template (Nginx user_data), ASG, scaling policies
 
-- Database: RDS MySQL, subnet group, parameter group, backups
+- **Database**: RDS MySQL, subnet group, parameter group, backups
 
-- Monitoring: CloudWatch alarms/dashboards (CPU, HTTP 5xx, latency, RDS health)
+- **Monitoring**: CloudWatch alarms/dashboards (CPU, HTTP 5xx, latency, RDS health)
 
-**Quick Start**
+# Quick Start
+
 # From repo root
 # Work in an environment(dev)
 
@@ -85,4 +86,5 @@ terraform init
 terraform plan 
 terraform apply 
 ```
+
 
