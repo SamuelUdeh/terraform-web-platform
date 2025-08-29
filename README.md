@@ -68,7 +68,7 @@ terraform-web-platform/
 # Quick Start
 
 # From repo root
-# Work in an environment(dev)
+# Work in the dev environment
 
 ```
 cd environments/dev
@@ -86,5 +86,6 @@ terraform init
 terraform plan 
 terraform apply 
 ```
+
 
 
