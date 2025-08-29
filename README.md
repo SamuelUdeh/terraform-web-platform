@@ -17,6 +17,8 @@ Production-ready, auto-scaling web platform on AWS using Terraform modules and s
 - Isolated dev and prod configurations
 
 
+
+
 ```
 terraform-web-platform/
 ├── environments/
@@ -53,3 +55,33 @@ terraform-web-platform/
 └── .gitignore
 ```
 
+**Module Roles**
+
+- Networking: VPC, subnets (public/private AZ1/AZ2), IGW, NAT, routes, SGs
+
+- Compute: ALB, target group, listener, launch template (Nginx user_data), ASG, scaling policies
+
+- Database: RDS MySQL, subnet group, parameter group, backups
+
+- Monitoring: CloudWatch alarms/dashboards (CPU, HTTP 5xx, latency, RDS health)
+
+**Quick Start**
+# From repo root
+# Work in an environment(dev)
+
+```
+cd environments/dev
+terraform init
+terraform plan 
+terraform apply 
+```
+
+# Work in the prod environment
+# From repo root
+
+```
+cd environments/prod
+terraform init
+terraform plan 
+terraform apply 
+```
