@@ -90,7 +90,7 @@ terraform apply
 ![Terraform Project 2](https://github.com/user-attachments/assets/a0ec1e4b-49ae-4b0c-b736-a1b3a9b15024)
 
 
-Outputs will include the -ALB DNS- (accessible via browser) and the -RDS- endpoint.
+Outputs will include the **ALB DNS** (accessible via browser) and the **RDS** endpoint.
 
 **Verification & Tests**
 
@@ -115,11 +115,13 @@ Outputs will include the -ALB DNS- (accessible via browser) and the -RDS- endpoi
 
 # Teardown
 cd environments/dev
-terraform destroy -var-file=terraform.tfvars
+terraform destroy
 
-👤 Author
+![Terraform Project 2b](https://github.com/user-attachments/assets/152ab4aa-b6b8-455c-8b3e-8fbfc0d8cb91)
 
-Samuel Udeh — Cloud/DevOps Engineer
+
+
+
 
 
 
