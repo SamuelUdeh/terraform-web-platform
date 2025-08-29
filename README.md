@@ -1,4 +1,4 @@
-# Multi-Environment AWS Infrastructure with ALB, ASG, RDS & Monitoring Using Terraform
+# Multi-Environment AWS Infrastructure With ALB, ASG, RDS & Monitoring Using Terraform
 
 Production-ready, auto-scaling web platform on AWS using Terraform modules and separate environments (dev, prod). Includes ALB, ASG (EC2 with Nginx via user_data), RDS (MySQL), and CloudWatch monitoring.
 
@@ -113,11 +113,14 @@ Outputs will include the **ALB DNS** (accessible via browser) and the **RDS** en
 - RDS not publicly accessible; only from app SG.
 
 
-# Teardown
+# Destroy The Resources
+```
 cd environments/dev
 terraform destroy
+```
 
 ![Terraform Project 2b](https://github.com/user-attachments/assets/152ab4aa-b6b8-455c-8b3e-8fbfc0d8cb91)
+
 
 
 
