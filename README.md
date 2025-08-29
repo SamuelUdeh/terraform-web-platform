@@ -1,4 +1,4 @@
-**Multi-Environment AWS Infrastructure with ALB, ASG, RDS & Monitoring Using Terraform** 
+# Multi-Environment AWS Infrastructure with ALB, ASG, RDS & Monitoring Using Terraform
 
 Production-ready, auto-scaling web platform on AWS using Terraform modules and separate environments (dev, prod). Includes ALB, ASG (EC2 with Nginx via user_data), RDS (MySQL), and CloudWatch monitoring.
 
@@ -17,7 +17,7 @@ Production-ready, auto-scaling web platform on AWS using Terraform modules and s
 - Isolated dev and prod configurations
 
 
-
+**Project Structure**
 
 ```
 terraform-web-platform/
@@ -85,3 +85,4 @@ terraform init
 terraform plan 
 terraform apply 
 ```
+
