@@ -16,6 +16,28 @@ Production-ready, auto-scaling web platform on AWS using Terraform modules and s
 
 - Isolated dev and prod configurations
 
+**Prerequisites**
+
+Before you start, ensure you have:
+
+1. **AWS account** 
+2. **Terraform** installed  
+3. **AWS CLI** installed
+   
+**Authenticate Terraform With AWS**
+To authenticate Terraform with AWS, you can follow these steps:
+
+Configure AWS CLI
+- Open your terminal, and run the following command to configure the AWS CLI:
+```
+aws configure
+```
+
+Enter the following details when prompted:
+
+- **AWS Access Key ID:** Your access key ID.
+- **AWS Secret Access Key:** Your secret access key.
+- **Default region name**: The AWS region you want to use (e.g., us-east-1).
 
 **Project Structure**
 
@@ -120,6 +142,7 @@ terraform destroy
 ```
 
 ![Terraform Project 2b](https://github.com/user-attachments/assets/152ab4aa-b6b8-455c-8b3e-8fbfc0d8cb91)
+
 
 
 
